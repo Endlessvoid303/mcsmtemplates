@@ -1,5 +1,5 @@
 {
-    "templates": [
+    "packages": [
         {
             "name": "Minecraft Java Server",
             "description": "A Minecraft Java server running with Docker",
