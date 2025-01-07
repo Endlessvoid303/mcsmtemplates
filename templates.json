@@ -1,0 +1,49 @@
+{
+    "templates": [
+        {
+            "name": "Minecraft Java Server",
+            "description": "A Minecraft Java server running with Docker",
+            "type": "minecraft/java",
+            "processType": "docker",
+            "cwd": "/opt/mcsmanager/daemon/data/InstanceData/template-minecraft-java",
+            "startCommand": "",
+            "stopCommand": "stop",
+            "terminalOption": {
+                "haveColor": true,
+                "pty": true,
+                "ptyWindowCol": 164,
+                "ptyWindowRow": 40
+            },
+            "docker": {
+                "image": "itzg/minecraft-server",
+                "ports": [
+                    "25565:25565/tcp"
+                ],
+                "env": [
+                    "EULA=TRUE",
+                    "MAX_MEMORY=6g",
+                    "TYPE=PURPUR",
+                    "VERSION=LATEST",
+                    "ENABLE_AUTOSTOP=TRUE",
+                    "AUTOSTOP_TIMEOUT_EST=300",
+                    "AUTOSTOP_TIMEOUT_INIT=600"
+                ],
+                "networkMode": "bridge",
+                "workingDir": "/data/"
+            },
+            "eventTask": {
+                "autoStart": false,
+                "autoRestart": false,
+                "ignore": false
+            },
+            "category": 0,
+            "tag": [],
+            "enableRcon": false,
+            "pingConfig": {
+                "ip": "",
+                "port": 0,
+                "type": 1
+            }
+        }
+    ]
+}
