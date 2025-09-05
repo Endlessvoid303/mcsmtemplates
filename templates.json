@@ -41,7 +41,8 @@
                         "AUTOSTOP_TIMEOUT_EST=300",
                         "AUTOSTOP_TIMEOUT_INIT=600",
                         "TZ=CET",
-                        "ICON=https://raw.githubusercontent.com/Endlessvoid303/mcsmtemplates/main/VoidHost.png"
+                        "ICON=https://raw.githubusercontent.com/Endlessvoid303/mcsmtemplates/main/VoidHost.png",
+                        "MODT=Running %env:TYPE% version %env:VERSION%"
                     ],
                     "networkMode": "bridge",
                     "workingDir": "/data/"
@@ -50,5 +51,6 @@
         }
     ]
 }
+
 
 
