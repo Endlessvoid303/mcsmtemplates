@@ -13,6 +13,8 @@
             "title": "Minecraft Java Server",
             "runtime": "Docker + Java 17+",
             "hardware": "RAM 6G+",
+            "gameType": "Minecraft",
+            "category": "Latest Version",
             "size": "Docker Image",
             "remark": "Based on Purpur with automatic stop enabled.",
             "targetLink": "",
@@ -48,4 +50,5 @@
         }
     ]
 }
+
 
