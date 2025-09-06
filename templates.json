@@ -11,6 +11,7 @@
             "language": "en_us",
             "description": "A Minecraft Java server running with Docker",
             "title": "Minecraft Java Server",
+            "image":"https://raw.githubusercontent.com/Endlessvoid303/mcsmtemplates/main/VoidHost.png",
             "runtime": "Docker + Java 17+",
             "hardware": "RAM 6G+",
             "gameType": "Minecraft",
@@ -51,6 +52,7 @@
         }
     ]
 }
+
 
 
 
